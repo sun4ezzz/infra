@@ -1,0 +1,11 @@
+---
+
+- name: Setup dba env
+  hosts: prod_servers
+  become: yes
+
+  tasks:
+  - name: ping
+    ping:
+
+  

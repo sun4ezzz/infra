@@ -4,8 +4,6 @@
   hosts: prod_servers
   become: yes
 
-  tasks:
-  - name: ping
-    ping:
-
+  roles:
+  - { role: setup_env, tags: ['env'] }
   
